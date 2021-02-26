@@ -53,5 +53,7 @@ class search_word:
 if __name__ == "__main__":
     # main function
     object_search = search_word()
-    search_word = input("enter search word: ")
-    object_search.search_function(search_word)
+    num_search = int(input("enter number of words to search : "))
+    for i in range(num_search):
+        search_word = input("enter search word: ")
+        object_search.search_function(search_word)
