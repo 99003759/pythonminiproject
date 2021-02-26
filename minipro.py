@@ -20,6 +20,7 @@ class search_word:
             # first searching word code
             if one_num == 0:
                 word_got = re.search(word_found[one_num], content)
+                # increasing count
                 one_num = one_num + 1
                 # get the span of the searched word
                 get_span = word_got.span()
@@ -60,4 +61,5 @@ if __name__ == "__main__":
     for i in range(num_search):
         # Enter word to search
         search_word = input("enter search word: ")
+        # refering each searching word
         object_search.search_function(search_word)
