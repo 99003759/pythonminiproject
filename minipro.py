@@ -52,7 +52,9 @@ class search_word:
             file_out.writelines('\n'.join(conv_str))
 if __name__ == "__main__":
     # main function
+    # object of the class search_word
     object_search = search_word()
+    # Enter the no of words to be search
     num_search = int(input("enter number of words to search : "))
     for i in range(num_search):
         search_word = input("enter search word: ")
