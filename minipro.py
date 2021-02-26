@@ -34,6 +34,7 @@ class search_word:
         store_span = 0
         # code to add the before and after words of searing word
         while one_num < len(word_found):
+            # first searching word code
             if one_num == 0:
                 word_got = re.search(word_found[one_num], content)
                 one_num = one_num + 1
@@ -42,6 +43,7 @@ class search_word:
                 store_word.append(content[get_span[0]-10:get_span[0]] + ' ' +
                                   search_word + ' ' +
                                   content[get_span[1]+1:get_span[1]+10])
+            # after first word                      
             else:
                 word_got = re.search(word_found[one_num],
                                      content[store_span+1:])
