@@ -21,15 +21,17 @@ class search_word:
             if one_num == 0:
                 word_got = re.search(word_found[one_num], content)
                 one_num = one_num + 1
+                # get the span of the searched word
                 get_span = word_got.span()
                 store_span = get_span[1]
                 store_word.append(content[get_span[0]-10:get_span[0]] + ' ' +
                                   search_word + ' ' +
                                   content[get_span[1]+1:get_span[1]+10])
-            # after first word
             else:
+                # after first word
                 word_got = re.search(word_found[one_num],
                                      content[store_span+1:])
+                # increase the count of the searched word
                 one_num = one_num + 1
                 get_span = word_got.span()
                 store_span = get_span[1]
