@@ -41,7 +41,7 @@ class search_word:
                                   search_word + ' ' +
                                   content[get_span[1]+1:get_span[1]+10])
         conv_str = []
-        # converion of no of words into string and added
+        # conversion of no of words into string and added
         conv_str.append(str(len(word_found)))
         # converting the words into single line each
         for y in range(1, len(store_word)+1):
@@ -61,5 +61,5 @@ if __name__ == "__main__":
     for i in range(num_search):
         # Enter word to search
         search_word = input("enter search word: ")
-        # refering each searching word
+        # referring each searching word
         object_search.search_function(search_word)
