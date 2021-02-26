@@ -33,6 +33,7 @@ class search_word:
                                      content[store_span+1:])
                 # increase the count of the searched word
                 one_num = one_num + 1
+                # get the span of searching word
                 get_span = word_got.span()
                 store_span = get_span[1]
                 store_word.append(content[get_span[0]-10:get_span[0]]+' ' +
