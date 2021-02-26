@@ -56,6 +56,8 @@ if __name__ == "__main__":
     object_search = search_word()
     # Enter the no of words to be search
     num_search = int(input("enter number of words to search : "))
+    # searching each word
     for i in range(num_search):
+        # Enter word to search
         search_word = input("enter search word: ")
         object_search.search_function(search_word)
